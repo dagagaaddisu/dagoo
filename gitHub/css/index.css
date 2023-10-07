@@ -1,0 +1,53 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+
+}
+
+header{
+    background-color: #555;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 3px solid red;
+   
+}
+
+@media(max-width:600px){
+    header {
+       grid-template-columns: 1fr;
+       line-height: 50px;
+       text-align: center;
+       height: auto;
+       position: static;
+      
+       
+      
+    }
+}
+.icon{
+    width: 50px;
+}
+
+header a:hover{
+    transition: all 0.15s;
+    color: red;
+}
+
+::selection{
+    background-color: yellow;
+    color: red;
+}
+
+body{
+  height: 1000px;
+}
